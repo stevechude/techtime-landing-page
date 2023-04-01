@@ -1,0 +1,146 @@
+.container {
+  background: #000f24;
+  width: 100%;
+  padding: 80px 120px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.first h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 47px;
+}
+.first p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: capitalize;
+  /* width: 281px; */
+}
+.iconsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+.youtube {
+  width: 32px;
+  height: 32px;
+}
+
+.second h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: capitalize;
+  width: 191px;
+}
+.second p {
+  margin: 18px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.third h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: capitalize;
+}
+.third p {
+  margin: 18px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fourth h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: capitalize;
+}
+.inputDiv {
+  display: flex;
+  justify-content: center;
+}
+.inputDiv input {
+  padding: 16px;
+  width: 223px;
+  height: 46px;
+  border-radius: 2px 0px 0px 2px;
+  background: #2a2a2b;
+  border: 1px solid #054fb3;
+}
+.inputDiv input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #424141;
+}
+.inputDiv button {
+  padding: 16px 0;
+  background: #054fb3;
+  border-radius: 0px 2px 2px 0px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  width: 113px;
+  border: 1px solid #054fb3;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .first h1 {
+    font-size: 36.3061px;
+    line-height: 36px;
+  }
+  .first p {
+    width: 281px;
+  }
+  .iconsDiv {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .second h1,
+  .third h1,
+  .fourth h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .second p,
+  .third p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .inputDiv {
+    width: 100%;
+  }
+}

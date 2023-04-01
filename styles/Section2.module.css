@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  background-color: #ccdbf0;
+}
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px;
+  color: #fff;
+}
+.items p {
+  font-weight: bold;
+  font-size: 24px;
+}
+.monday {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.com {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff;
+  }
+  .items p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .com {
+    font-size: 9px;
+  }
+}

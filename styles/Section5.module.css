@@ -1,0 +1,314 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  background: #f8f9fc;
+  padding: 10px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+.texts h1 {
+  font-size: 50px;
+  line-height: 1px;
+  text-transform: capitalize;
+  color: #000f24;
+}
+.texts p {
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #a2a2a2;
+  width: 680px;
+}
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px 0;
+  color: #a1a1a1;
+}
+.highlights div {
+  cursor: pointer;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.highlights div:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #004db3;
+}
+.highlights p {
+  padding: 8px 10px;
+}
+
+.second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(1 3fr); */
+  gap: 10px;
+  justify-content: space-between;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 16px;
+}
+.imageDiv {
+  width: 100%;
+  /* width: 400px; */
+  height: 252px;
+}
+.image {
+  width: 100%;
+}
+.textRateDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.textDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 93, 206, 0.2);
+  border-radius: 16px;
+  padding: 4px 20px;
+  height: 24px;
+  width: 79px;
+}
+.textDiv p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #1e5dce;
+}
+.rateDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rateDiv p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #a1a1a1;
+  margin: 0 auto;
+}
+
+.centerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+.centerDiv h1 {
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #000f24;
+}
+.timeLesson {
+  display: flex;
+  justify-content: space-between;
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.timeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.lessonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottomDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.bottomDiv p {
+  font-weight: 700;
+  font-size: 16px;
+}
+.price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #004db3;
+}
+.nameDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 239px;
+  height: 94px;
+  margin: 0 auto;
+}
+
+.buttonDiv button {
+  padding: 16px 32px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #004db3;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px 10px;
+  }
+
+  .texts {
+    height: 100px;
+  }
+  .texts h1 {
+    font-size: 24px;
+    line-height: 1px;
+  }
+  .texts p {
+    font-size: 8px;
+    line-height: 16px;
+    width: 280px;
+  }
+
+  .highlights {
+    padding: 5px 0;
+    gap: 15px;
+  }
+  .highlights div {
+    height: 19px;
+  }
+  .highlights p {
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+
+  .second {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .body {
+    width: 176px;
+    height: 234px;
+    padding: 10px 10px;
+  }
+  .imageDiv {
+    width: 156px;
+    height: 117px;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  .textDiv {
+    width: 29px;
+    height: 9px;
+    padding: 2px 5px;
+  }
+  .textDiv p {
+    font-size: 4px;
+    line-height: 5px;
+  }
+  .rateDiv p {
+    font-size: 4px;
+    line-height: 5px;
+  }
+  .star {
+    width: 3.33px;
+    height: 3.17px;
+  }
+
+  .centerDiv {
+    padding: 0 5px;
+  }
+  .centerDiv h1 {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .timeLesson {
+    font-size: 4px;
+    line-height: 5px;
+  }
+  .timeIcon {
+    width: 6.67px;
+    height: 6.67px;
+  }
+  .lessonIcon {
+    width: 7.33px;
+    height: 5.33px;
+  }
+
+  .bottomDiv {
+    padding: 0 5px;
+  }
+  .bottomDiv p {
+    font-size: 6px;
+  }
+  .small1 {
+    width: 16px;
+    height: 16px;
+  }
+  .price {
+    font-size: 8px;
+  }
+  .nameDiv {
+    gap: 4px;
+  }
+
+  .buttonDiv {
+    padding: 10px;
+    width: 143px;
+    height: 47px;
+  }
+  .buttonDiv button {
+    padding: 8px 16px;
+    width: 100%;
+    height: 100%;
+    font-size: 6px;
+    line-height: 11px;
+    text-align: center;
+  }
+}

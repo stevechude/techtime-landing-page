@@ -1,0 +1,107 @@
+.container {
+  overflow: hidden;
+  background-color: #014db3;
+  width: 100%;
+  padding: 20px 120px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.techtime {
+}
+
+.toggleBar {
+  display: none;
+}
+
+.second {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: #004db3;
+  cursor: pointer;
+  border: 0;
+  background: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 10px 20px;
+  }
+  .toggleBar {
+    display: block;
+  }
+  .second {
+    display: none;
+  }
+  .menuOpen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px 30px;
+    top: 5rem;
+    right: 0;
+    background-color: #014db3;
+    z-index: 1;
+  }
+  .menuOpen button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #004db3;
+    border: 0;
+    border-radius: 4px;
+  }
+  .menuList {
+    padding: 0 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .second {
+    display: none;
+  }
+  .toggleBar {
+    display: block;
+  }
+
+  .menuOpen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    z-index: 1;
+  }
+
+  .menuList {
+    padding: 0 30px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

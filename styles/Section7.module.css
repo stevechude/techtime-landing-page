@@ -1,0 +1,211 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  background: #014db3;
+  padding: 20px 120px;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.texts p:first-child {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.texts h1 {
+  margin: 8px 0;
+  width: 900px;
+  font-size: 36px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.texts p:last-child {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.vector {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+
+  height: 400px;
+}
+.image1 {
+  position: absolute;
+  right: 250px;
+  top: 60px;
+}
+.image2 {
+  position: absolute;
+  top: 130px;
+  right: 100px;
+}
+.image3 {
+  position: absolute;
+  left: 50px;
+  top: 170px;
+}
+.image4 {
+  position: absolute;
+  bottom: 90px;
+  right: 150px;
+}
+.image5 {
+  position: absolute;
+  top: 210px;
+  left: 170px;
+}
+.image6 {
+  position: absolute;
+  top: 70px;
+  left: 160px;
+}
+.image7 {
+  position: absolute;
+  left: 270px;
+  top: 150px;
+}
+.image8 {
+  position: absolute;
+  top: 40px;
+}
+.image9 {
+  position: absolute;
+  left: 51px;
+  bottom: 70px;
+}
+.image10 {
+  position: absolute;
+  left: 331px;
+  top: 30px;
+}
+
+.buttonDiv {
+  display: flex;
+  padding: 20px 0;
+}
+
+.container button {
+  margin: 0 auto;
+  width: 220px;
+  height: 54px;
+  border-radius: 4px;
+  border: 0;
+  background-color: #fff;
+  color: #004db3;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 20px 0px;
+  }
+
+  .texts p:first-child {
+    font-size: 8px;
+    line-height: 5.5px;
+    width: 300px;
+  }
+  .texts h1 {
+    font-size: 20px;
+    line-height: 25px;
+    width: 310px;
+  }
+  .texts p:last-child {
+    font-size: 8px;
+    line-height: 5.5px;
+    width: 300px;
+  }
+
+  .vector {
+    width: 100%;
+    height: 147px;
+
+    padding: 20px 0px;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7,
+  .image8,
+  .image9,
+  .image10 {
+    width: 25.5px;
+    height: 25.5px;
+  }
+
+  .image1 {
+    left: 55px;
+
+    top: 25px;
+  }
+  .image2 {
+    left: 120px;
+    top: 55px;
+  }
+  .image3 {
+    left: 190px;
+    top: 80px;
+  }
+  .image4 {
+    left: 65px;
+    bottom: 30px;
+    width: 20.5px;
+  }
+  .image5 {
+    left: 160px;
+    top: 110px;
+  }
+  .image6 {
+    top: 30px;
+  }
+  .image7 {
+    left: 245px;
+    top: 110px;
+    width: 21px;
+  }
+  .image8 {
+    right: 110px;
+    top: 20px;
+  }
+  .image9 {
+    left: 110px;
+    bottom: 10px;
+  }
+  .image10 {
+    left: 270px;
+    top: 70px;
+  }
+
+  .buttonDiv {
+    padding: 10px 0;
+  }
+
+  .container button {
+    width: 110px;
+    height: 27px;
+    font-size: 8px;
+  }
+}
