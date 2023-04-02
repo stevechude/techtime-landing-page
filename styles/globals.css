@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "Amazing Kids";
+  src: url("/fonts/amazing-kids.woff2") format("woff2"),
+    url("/fonts/amazing-kids.woff") format("woff"),
+    url("/fonts/amazing-kids.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Amazing Kids", sans-serif;
 }
 
 * {
